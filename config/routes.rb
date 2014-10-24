@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :users
   resources :admin
   resources :post
+  resources :sessions
 
   match '/welcome', to: 'welcome#index', via: 'get'
   match '/home', to: 'static_pages#home', via: 'get'
